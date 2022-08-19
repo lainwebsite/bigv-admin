@@ -22,6 +22,11 @@ Route::get('/orderdet', function () {
     return view('admin.manage.orders.detail');
 });
 
+Route::resource('categories', 'CategoryController');
+Route::get('/categorydet', function () {
+    return view('admin.manage.categories.detail');
+});
+
 Route::resource('products', 'ProductController');
 Route::get('/productdet', function () {
     return view('admin.manage.products.detail');

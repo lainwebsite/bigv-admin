@@ -51,6 +51,12 @@ active
         <!-- Start Page Content -->
         <!-- ============================================================== -->
         <!-- basic table -->
+        <div class="alert alert-success" role="alert">
+            <strong>Success - </strong> A simple success alert—check it out!
+        </div>
+        <div class="alert alert-danger" role="alert">
+            <strong>Error - </strong> A simple danger alert—check it out!
+        </div>
         <div class="row">
             <div class="col-12">
                 <div class="card">
@@ -157,16 +163,6 @@ active
     </div>
     <!-- ============================================================== -->
     <!-- End Container fluid  -->
-    <!-- ============================================================== -->
-    <!-- ============================================================== -->
-    <!-- footer -->
-    <!-- ============================================================== -->
-    <footer class="footer text-center text-muted">
-        All Rights Reserved by Adminmart. Designed and Developed by <a
-            href="https://wrappixel.com/">WrapPixel</a>.
-    </footer>
-    <!-- ============================================================== -->
-    <!-- End footer -->
     <!-- ============================================================== -->
 </div>
 <!-- ============================================================== -->
