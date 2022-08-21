@@ -31,3 +31,13 @@ Route::resource('products', 'ProductController');
 Route::get('/productdet', function () {
     return view('admin.manage.products.detail');
 });
+
+Route::resource('customers', 'CustomerController');
+Route::get('/customerdet', function () {
+    return view('admin.manage.customers.detail');
+});
+
+Route::resource('vendors', 'VendorController');
+Route::get('/vendordet', function () {
+    return view('admin.manage.vendors.detail');
+});

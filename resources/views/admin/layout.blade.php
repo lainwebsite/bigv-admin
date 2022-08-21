@@ -151,11 +151,11 @@
                                 aria-expanded="false"><i data-feather="percent" class="feather-icon"></i><span
                                     class="hide-menu">Discount</span></a></li>
 
-                        <li class="sidebar-item @yield('customers-manage-selected')"> <a class="sidebar-link sidebar-link @yield('customers-manage-active')" href="app-calendar.html"
+                        <li class="sidebar-item @yield('customers-manage-selected')"> <a class="sidebar-link sidebar-link @yield('customers-manage-active')" href="{{url('/customers')}}"
                                 aria-expanded="false"><i data-feather="users" class="feather-icon"></i><span
                                     class="hide-menu">Customer</span></a></li>
 
-                        <li class="sidebar-item @yield('vendors-manage-selected')"> <a class="sidebar-link sidebar-link @yield('vendors-manage-active')" href="app-calendar.html"
+                        <li class="sidebar-item @yield('vendors-manage-selected')"> <a class="sidebar-link sidebar-link @yield('vendors-manage-active')" href="{{url('/vendors')}}"
                                 aria-expanded="false"><i data-feather="smile" class="feather-icon"></i><span
                                     class="hide-menu">Vendor</span></a></li>
 
