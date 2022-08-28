@@ -37,7 +37,19 @@ Route::get('/customerdet', function () {
     return view('admin.manage.customers.detail');
 });
 
+Route::resource('discounts', 'DiscountController');
+Route::get('/discountdet', function () {
+    return view('admin.manage.discounts.detail');
+});
+Route::get('/discountedit', function () {
+    return view('admin.manage.discounts.edit');
+});
+
 Route::resource('vendors', 'VendorController');
 Route::get('/vendordet', function () {
     return view('admin.manage.vendors.detail');
+});
+
+Route::get('/login', function () {
+    return view('admin.login');
 });

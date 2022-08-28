@@ -110,7 +110,7 @@ active
                             <p class="mr-4 mb-0 text-nowrap">Start Date</p>
                             <input type="date" class="form-control w-auto" value="2018-05-13">
                             <p class="ml-4 mr-4 mb-0">-</p>
-                            <p class="mr-4 mb-0 text-nowrap">Start Date</p>
+                            <p class="mr-4 mb-0 text-nowrap">End Date</p>
                             <input type="date" class="form-control w-auto mr-4" value="2018-05-13">
                             <a class="btn btn-primary text-white pr-4 pl-4" href="http://127.0.0.1:8000/products/create">Filter</a>
                         </div>

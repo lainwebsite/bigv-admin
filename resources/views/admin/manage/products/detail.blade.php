@@ -224,6 +224,116 @@ active
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Active Discounts</h4>
+                        <div class="table-responsive">
+                            <table id="zero_config" class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Type</th>
+                                        <th>Discount</th>
+                                        <th>Used</th>
+                                        <th>Status & Period</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <a href="/discountdet" class="a-normal d-flex flex-column justify-content-center">
+                                                <h5 class="m-0">BIGVDISCOUNT40</h5>
+                                                <small class="m-0">ID: <b>19</b></small>
+                                            </a>
+                                        </td>
+                                        <td class="align-middle d-flex flex-column justify-content-center">
+                                            <h5 class="m-0">Shipping</h5>
+                                            <small class="m-0">(1 Product)</small>
+                                        </td>
+                                        <td class="align-middle">50%</td>
+                                        <td class="align-middle">3</td>
+                                        <td class="align-middle">
+                                            <small class="badge bg-orange font-weight-medium badge-pill text-white m-0">Incoming</small>
+                                            <p class="m-0">13/08/2022 16:00 -<br>14/08/2022 18:00</p>
+                                        </td>
+                                        <td class="align-middle">
+                                            <div class="d-flex" style="gap: 10px;">
+                                                <a href="" class="a-normal text-info"><i data-feather="edit" class="feather-icon"></i></a>
+                                                <a href="" class="a-normal text-danger"><i data-feather="trash" class="feather-icon"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/discountdet" class="a-normal d-flex flex-column justify-content-center">
+                                                <h5 class="m-0">BIGVDISCOUNT40</h5>
+                                                <small class="m-0">ID: <b>19</b></small>
+                                            </a>
+                                        </td>
+                                        <td class="align-middle d-flex flex-column justify-content-center">
+                                            <h5 class="m-0">Product</h5>
+                                            <small class="m-0">(All Product)</small>
+                                        </td>
+                                        <td class="align-middle">$5</td>
+                                        <td class="align-middle">3</td>
+                                        <td class="align-middle">
+                                            <small class="badge bg-success font-weight-medium badge-pill text-white m-0">Active</small>
+                                            <p class="m-0">12/08/2022 16:00 -<br>13/08/2022 18:00</p>
+                                        </td>
+                                        <td class="align-middle">
+                                            <div class="d-flex" style="gap: 10px;">
+                                                <a href="" class="a-normal text-info"><i data-feather="edit" class="feather-icon"></i></a>
+                                                <a href="" class="a-normal text-danger"><i data-feather="trash" class="feather-icon"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <a href="/discountdet" class="a-normal d-flex flex-column justify-content-center">
+                                                <h5 class="m-0">BIGVDISCOUNT40</h5>
+                                                <small class="m-0">ID: <b>19</b></small>
+                                            </a>
+                                        </td>
+                                        <td class="align-middle d-flex flex-column justify-content-center">
+                                            <h5 class="m-0">Product</h5>
+                                            <small class="m-0">(5 Products)</small>
+                                        </td>
+                                        <td class="align-middle">$5</td>
+                                        <td class="align-middle">3</td>
+                                        <td class="align-middle">
+                                            <small class="badge bg-secondary font-weight-medium badge-pill text-white m-0">Ended</small>
+                                            <p class="m-0">9/08/2022 16:00 -<br>10/08/2022 18:00</p>
+                                        </td>
+                                        <td class="align-middle">
+                                            <div class="d-flex" style="gap: 10px;">
+                                                <a href="" class="a-normal text-info"><i data-feather="edit" class="feather-icon"></i></a>
+                                                <a href="" class="a-normal text-danger"><i data-feather="trash" class="feather-icon"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#" tabindex="-1">Previous</a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- ============================================================== -->
     <!-- End Container fluid  -->
