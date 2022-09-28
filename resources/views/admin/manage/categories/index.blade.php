@@ -76,7 +76,8 @@ active
                                     @for ($i = 0; $i < 5; $i++)
                                     <tr>
                                         <td>
-                                            <a href="/categorydet" class="a-normal">
+                                            <a href="{{url('/categorydet')}}" class="a-normal d-flex align-items-center">
+                                                <img class="d-flex br-18 mr-3" src="https://bigvsg.com/wp-content/uploads/2021/12/Hae-Bee-Hiam-Pasta.jpg" width="60" height="60" alt="Generic placeholder image" style="object-fit: cover;">
                                                 <div class="d-flex align-items-start flex-column">
                                                     <h5 class="m-0"><b>Food & Beverages</b></h5>
                                                 </div>

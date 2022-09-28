@@ -51,9 +51,10 @@ active
             <div class="col-12">
                 <div class="card">
                     <div class="card-body">
-                        <div class="row">
-                            <div class="col-12 d-flex flex-column justify-content-center">
-                                <h2 class="card-title mb-4">Cute Tiger Aroma Stone Set”</h2>
+                        <div class="d-flex" style="gap: 35px;">
+                            <img class="d-flex br-18" src="https://bigvsg.com/wp-content/uploads/2021/12/Hae-Bee-Hiam-Pasta.jpg" width="120" height="120" alt="Generic placeholder image" style="object-fit: cover;">
+                            <div class="d-flex flex-column justify-content-center">
+                                <h2 class="card-title mb-3">Cute Tiger Aroma Stone Set”</h2>
                                 <p class="m-0">Farewell to the year of Ox, and the Year of Tiger on the way! Over here we launch our cute “Cute Tiger Aroma Stone Set” to welcome the New Year.<br>
                                 The stone set is decorated with the festive red dried flowers paired with a blessed essential oil blend and a cute tiger aroma stone! It signifies peace, prosperity, good health, good luck, good dreams, happiness, wealth and all the good things come to you in the “Tiger year”</p>
                             </div>

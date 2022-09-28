@@ -56,6 +56,18 @@ active
                                 <label for="categoryDescription">Product Description</label>
                                 <textarea class="form-control" id="categoryDescription" name="categoryDescription" required placeholder="Category Description" rows="4"></textarea>
                             </div>
+                            <div class="form-group">
+                                <label for="productFeaturedImage">Profile Photo</label>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">Upload</span>
+                                    </div>
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="categoryPhoto">
+                                        <label class="custom-file-label" for="categoryPhoto">Choose file</label>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="d-flex mt-4 gap-15x">
                                 <button type="submit" class="btn btn-primary">Save Changes</button>
                                 <a href="{{route('categories.index')}}" class="btn btn-light">Cancel</a>
