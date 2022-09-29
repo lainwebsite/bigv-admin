@@ -289,7 +289,7 @@ active
                                 <input type="number" class="form-control" id="minOrderProductVoucher" name="minOrderProductVoucher" required placeholder="Minimum Order" min="0" value="0">
                             </div>
                         </div>
-                        <div class="form-check form-check-inline form-group" style="display:none;" id="expandableCheckboxMaxQuotaProductVoucher">
+                        <div class="form-check form-check-inline form-group" id="expandableCheckboxMaxQuotaProductVoucher">
                             <div class="custom-control custom-checkbox">
                                 <input type="checkbox" class="custom-control-input" id="setMaxQuotaProductVoucher">
                                 <label class="custom-control-label" for="setMaxQuotaProductVoucher">Set Maximum Usage Quota</label>
@@ -615,14 +615,8 @@ active
             $("#setMaxQuotaProductVoucher").prop("checked", false);
             $("#expandableMaxQuotaProductVoucher").slideUp();
         }
-        if($(this).val() == 1){
-            $("#expandableCheckboxMaxDiscountProductVoucher").slideUp();
-            $("#expandableCheckboxMaxQuotaProductVoucher").slideUp();
-        }
-        else {
-            $("#expandableCheckboxMaxDiscountProductVoucher").slideDown();
-            $("#expandableCheckboxMaxQuotaProductVoucher").slideDown();
-        }
+        if($(this).val() == 1) $("#expandableCheckboxMaxDiscountProductVoucher").slideUp();
+        else $("#expandableCheckboxMaxDiscountProductVoucher").slideDown();
     });
 
 </script>
