@@ -83,7 +83,7 @@ active
                         </div>
                         <div class="form-group">
                             <label>Active Period</label>    
-                            <div class="align-self-center d-flex align-items-center">
+                            <div class="align-self-center d-flex align-items-center flex-wrap">
                                 <p class="mr-4 mb-0 text-nowrap">Start Datetime</p>
                                 <input type="datetime-local" class="form-control w-auto" value="2018-05-13">
                                 <p class="ml-4 mr-4 mb-0">-</p>
@@ -126,6 +126,17 @@ active
                                 </div>
                             </div>
                         </div>
+                        
+                        <!-- Cuma muncul kalo productnya ada variation -->
+                        <div class="form-group mt-4">
+                            <label for="salePriceVariation">Product Variation</label>
+                            <select class="custom-select custom-border" id="salePriceVariation" style="border-radius: 10px !important;">
+                                <option selected="" value="1">Large</option>
+                                <option value="2">Small</option>
+                            </select>
+                        </div>
+                        <!-- Cuma muncul kalo productnya ada variation -->
+
                         <div class="form-group mt-4">
                             <label for="salePrice">Sale Price</label>
                             <div class="input-group">
