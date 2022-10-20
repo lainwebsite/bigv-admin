@@ -53,3 +53,33 @@ Route::get('/vendordet', function () {
 Route::get('/login', function () {
     return view('admin.login');
 });
+
+// ANALYTICS
+
+Route::get('/product-analytics', function () {
+    return view('admin.analytics.products.index');
+});
+
+Route::get('/product-analytics/detail', function () {
+    return view('admin.analytics.products.detail');
+});
+
+Route::get('/vendor-analytics', function () {
+    return view('admin.analytics.vendors.index');
+});
+
+Route::get('/vendor-analytics/detail', function () {
+    return view('admin.analytics.vendors.detail');
+});
+
+Route::get('/customer-analytics', function () {
+    return view('admin.analytics.customers.index');
+});
+
+Route::get('/customer-analytics/detail', function () {
+    return view('admin.analytics.customers.detail');
+});
+
+Route::get('/order-analytics', function () {
+    return view('admin.analytics.orders.index');
+});

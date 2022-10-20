@@ -15,6 +15,7 @@
     <link href="{{asset('assets/extra-libs/c3/c3.min.css')}}" rel="stylesheet">
     <link href="{{asset('assets/libs/chartist/dist/chartist.min.css')}}" rel="stylesheet">
     <link href="{{asset('assets/extra-libs/jvector/jquery-jvectormap-2.0.2.css')}}" rel="stylesheet" />
+    <link href="{{asset('assets/libs/morris.js/morris.css')}}" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="{{asset('dist/css/style.min.css')}}" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -162,19 +163,19 @@
                         <li class="list-divider"></li>
                         <li class="nav-small-cap"><span class="hide-menu">Analytics</span></li>
 
-                        <li class="sidebar-item @yield('orders-analytics-selected')"> <a class="sidebar-link sidebar-link @yield('orders-analytics-active')" href="app-calendar.html"
+                        <li class="sidebar-item @yield('orders-analytics-selected')"> <a class="sidebar-link sidebar-link @yield('orders-analytics-active')" href="{{url('/order-analytics')}}"
                                 aria-expanded="false"><i data-feather="shopping-bag" class="feather-icon"></i><span
                                     class="hide-menu">Order</span></a></li>
 
-                        <li class="sidebar-item @yield('products-analytics-selected')"> <a class="sidebar-link sidebar-link @yield('products-analytics-active')" href="app-calendar.html"
+                        <li class="sidebar-item @yield('products-analytics-selected')"> <a class="sidebar-link sidebar-link @yield('products-analytics-active')" href="{{url('/product-analytics')}}"
                                 aria-expanded="false"><i data-feather="archive" class="feather-icon"></i><span
                                     class="hide-menu">Product</span></a></li>
 
-                        <li class="sidebar-item @yield('customers-analytics-selected')"> <a class="sidebar-link sidebar-link @yield('customers-analytics-active')" href="app-calendar.html"
+                        <li class="sidebar-item @yield('customers-analytics-selected')"> <a class="sidebar-link sidebar-link @yield('customers-analytics-active')" href="{{url('/customer-analytics')}}"
                                 aria-expanded="false"><i data-feather="users" class="feather-icon"></i><span
                                     class="hide-menu">Customer</span></a></li>
 
-                        <li class="sidebar-item @yield('vendors-analytics-selected')"> <a class="sidebar-link sidebar-link @yield('vendors-analytics-active')" href="app-calendar.html"
+                        <li class="sidebar-item @yield('vendors-analytics-selected')"> <a class="sidebar-link sidebar-link @yield('vendors-analytics-active')" href="{{url('/vendor-analytics')}}"
                                 aria-expanded="false"><i data-feather="smile" class="feather-icon"></i><span
                                     class="hide-menu">Vendor</span></a></li>
                         <li class="list-divider"></li>
@@ -199,23 +200,21 @@
     <script src="{{asset('assets/libs/jquery/dist/jquery.min.js')}}"></script>
     <script src="{{asset('assets/libs/popper.js/dist/umd/popper.min.js')}}"></script>
     <script src="{{asset('assets/libs/bootstrap/dist/js/bootstrap.min.js')}}"></script>
-    @yield('javascript-extra')
     <!-- apps -->
     <!-- apps -->
     <script src="{{asset('dist/js/app-style-switcher.js')}}"></script>
     <script src="{{asset('dist/js/feather.min.js')}}"></script>
     <script src="{{asset('assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js')}}"></script>
     <script src="{{asset('dist/js/sidebarmenu.js')}}"></script>
-    <!--Custom JavaScript -->
+    <!--Custom JavaScript -->                                                    
     <script src="{{asset('dist/js/custom.min.js')}}"></script>
     <!--This page JavaScript -->
     <script src="{{asset('assets/extra-libs/c3/d3.min.js')}}"></script>
     <script src="{{asset('assets/extra-libs/c3/c3.min.js')}}"></script>
-    <script src="{{asset('assets/libs/chartist/dist/chartist.min.js')}}"></script>
-    <script src="{{asset('assets/libs/chartist-plugin-tooltips/dist/chartist-plugin-tooltip.min.js')}}"></script>
     <script src="{{asset('assets/extra-libs/jvector/jquery-jvectormap-2.0.2.min.js')}}"></script>
     <script src="{{asset('assets/extra-libs/jvector/jquery-jvectormap-world-mill-en.js')}}"></script>
     <script src="{{asset('dist/js/pages/dashboards/dashboard1.min.js')}}"></script>
+    @yield('javascript-extra')
 </body>
 
 </html>
