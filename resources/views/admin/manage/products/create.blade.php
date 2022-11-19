@@ -103,12 +103,23 @@ active
                                 <a href="javascript:void(0)" class="btn btn-primary text-white" id="addImage">Add Another Image</a>
                             </p>
                             <div class="divider-dash mt-4 mb-4"></div>
-                            <h4 class="card-title mb-4">Product Images</h4>
+                            <h4 class="card-title mb-4">Product Variation</h4>
                             <div id="productVariationGroup"></div>
                             <p class="text-lg-right mt-4">
                                 <a href="javascript:void(0)" class="btn btn-primary text-white" id="addVariation">Add Another Variation</a>
                             </p>
                             <div class="divider-dash mt-4 mb-4"></div>
+
+                            <!-- PRODUCT ADDON -->
+                            <h4 class="card-title mb-4">Product Addon</h4>
+                            <div id="productAddonGroup" class="d-flex flex-column" style="gap:30px;">
+                                
+                            </div>
+                            <p class="text-lg-right mt-4">
+                                <a href="javascript:void(0)" class="btn btn-primary text-white" id="addAddon">Add Another Addon</a>
+                            </p>
+                            <!-- PRODUCT ADDON -->
+
                             <div class="d-flex mt-4 gap-15x">
                                 <button type="submit" class="btn btn-primary">Save Changes</button>
                                 <a href="{{route('products.index')}}" class="btn btn-light">Cancel</a>
@@ -195,6 +206,71 @@ active
         var id = $(this).attr("count");
         $("#inputProductVariant" + id).remove();
     });
+
+    // ==================== ADDON ==================
+    $("#addAddon").on('click', function(){
+        $("#productAddonGroup").append(`
+            <div class="d-flex flex-column" style="gap: 12px;">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-4 d-flex">
+                        <p style="white-space: nowrap;" class="m-0"><b>Addon <span class="addon-number">1</span></b></p>
+                    </div>
+                    <div class="col-12 col-md-8">
+                        <input type="text" class="form-control w-100" id="addonName" name="addonName" required placeholder="Addon Name">
+                    </div>
+                </div>
+                <div class="addon-option-group d-flex flex-column" style="gap: 10px;"></div>
+                <div class="d-flex justify-content-end" style="gap: 10px;">
+                    <a href="javascript:void(0)" class="btn btn-primary font-12 text-white add-addon-option">Add Option</a>
+                    <a href="javascript:void(0)" class="btn btn-secondary font-12 text-white delete-addon">Delete Addon</a>
+                </div>
+            </div>
+        `);
+
+        $('.addon-number').each(function(i, obj) {
+            $(this).html(i + 1);
+        });
+    });
+
+    $(document).on('click', '.add-addon-option', function(){
+        $(this).parent().parent().children(".addon-option-group").append(`
+            <div class="row align-items-center">
+                <div class="col-12 col-md-3 d-flex">
+                    <p style="white-space: nowrap;" class="m-0">Option</p>
+                </div>
+                <div class="col-12 col-md-9">
+                    <div class="row">
+                        <div class="col-5">
+                            <input type="text" class="form-control" id="productName" name="productName" required="" placeholder="Name">
+                        </div>
+                        <div class="col-5 p-0">
+                            <input type="number" class="form-control" id="productName" name="productName" required="" placeholder="Price">
+                        </div>
+                        <div class="col-2">
+                            <div class="d-flex h-100">
+                                <div class="pl-2 pr-2 d-flex align-items-center justify-content-center custom-border delete-addon-option cursor-pointer border-danger" count="1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x feather-icon text-danger"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `);
+    });
+
+    $(document).on('click', '.delete-addon', function(){
+        $(this).parent().parent().remove();
+        $('.addon-number').each(function(i, obj) {
+            $(this).html(i + 1);
+        });
+    });
+
+    $(document).on('click', '.delete-addon-option', function(){
+        $(this).parent().parent().parent().parent().parent().remove();
+    });
+
+    // =============================================
 
 </script>
 @endsection

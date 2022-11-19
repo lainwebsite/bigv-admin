@@ -95,6 +95,16 @@ active
                                 <div class="divider-dash mt-4 mb-4"></div>
                                 <h4 class="card-title">Color Variations</h4>
                                 <p class="m-0">white, red, blue</p>
+
+                                <!-- Addon -->
+                                <div class="divider-dash mt-4 mb-4"></div>
+                                <h4 class="card-title">Package Addon (required)</h4>
+                                <p class="mb-3">Large ($8), Small ($7), Medium ($8)</p>
+                                <h4 class="card-title">Sauce Addon</h4>
+                                <p class="mb-3">Filling ($8)</p>
+                                <!-- Addon -->
+
+
                                 <div class="divider-dash mt-4 mb-4"></div>
                                 <h4 class="card-title">Additional Information</h4>
                                 <p class="m-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab, sint eos. Repellendus non consectetur doloribus amet magnam voluptatem, impedit illum veniam molestias nisi accusamus tenetur commodi expedita, mollitia dolorem nulla.</p>
